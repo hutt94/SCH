@@ -1,0 +1,424 @@
+2022-12-18 21:52:42,764 - INFO - --------------------------Current Settings--------------------------
+2022-12-18 21:52:42,764 - INFO - EVAL = False
+2022-12-18 21:52:42,764 - INFO - DATASET = MIRFlickr
+2022-12-18 21:52:42,764 - INFO - CODE_LEN = 32
+2022-12-18 21:52:42,764 - INFO - GPU_ID =  0
+2022-12-18 21:52:42,764 - INFO - ALPHA = 1.0000
+2022-12-18 21:52:42,764 - INFO - BETA = 1.0000
+2022-12-18 21:52:42,764 - INFO - NUM_EPOCH = 120
+2022-12-18 21:52:42,764 - INFO - BATCH_SIZE = 32
+2022-12-18 21:52:42,764 - INFO - NUM_WORKERS = 8
+2022-12-18 21:52:42,764 - INFO - EPOCH_INTERVAL = 2
+2022-12-18 21:52:42,764 - INFO - EVAL_INTERVAL = 40
+2022-12-18 21:52:42,764 - INFO - LR_IMG = 0.0050
+2022-12-18 21:52:42,764 - INFO - LR_TXT = 0.0050
+2022-12-18 21:52:42,764 - INFO - MOMENTUM = 0.7000
+2022-12-18 21:52:42,764 - INFO - WEIGHT_DECAY = 0.0005
+2022-12-18 21:52:42,765 - INFO - --------------------------------------------------------------------
+2022-12-18 21:52:47,882 - INFO - ---------------------------Size------------------------
+2022-12-18 21:52:47,883 - INFO - Training size: 10000, Test size: 2000
+2022-12-18 21:52:51,887 - INFO - Epoch [1/120], alpha for ImgNet: 1.0000, alpha for TxtNet: 1.0000
+2022-12-18 21:53:25,733 - INFO - Epoch [1/120], Iter [156/312] Loss1: 0.0674 Loss2: 0.7107 Total Loss: 0.7780
+2022-12-18 21:53:58,689 - INFO - Epoch [1/120], Iter [312/312] Loss1: 0.0787 Loss2: 0.6283 Total Loss: 0.7069
+2022-12-18 21:53:58,810 - INFO - Epoch [2/120], alpha for ImgNet: 1.4142, alpha for TxtNet: 1.4142
+2022-12-18 21:54:32,420 - INFO - Epoch [2/120], Iter [156/312] Loss1: 0.0906 Loss2: 0.6960 Total Loss: 0.7867
+2022-12-18 21:55:05,202 - INFO - Epoch [2/120], Iter [312/312] Loss1: 0.1033 Loss2: 0.6890 Total Loss: 0.7923
+2022-12-18 21:55:05,322 - INFO - Epoch [3/120], alpha for ImgNet: 1.7321, alpha for TxtNet: 1.7321
+2022-12-18 21:55:39,098 - INFO - Epoch [3/120], Iter [156/312] Loss1: 0.1391 Loss2: 0.5975 Total Loss: 0.7366
+2022-12-18 21:56:12,289 - INFO - Epoch [3/120], Iter [312/312] Loss1: 0.1504 Loss2: 0.5959 Total Loss: 0.7463
+2022-12-18 21:56:12,385 - INFO - Epoch [4/120], alpha for ImgNet: 2.0000, alpha for TxtNet: 2.0000
+2022-12-18 21:56:45,957 - INFO - Epoch [4/120], Iter [156/312] Loss1: 0.1872 Loss2: 0.5707 Total Loss: 0.7579
+2022-12-18 21:57:19,394 - INFO - Epoch [4/120], Iter [312/312] Loss1: 0.1855 Loss2: 0.5676 Total Loss: 0.7532
+2022-12-18 21:57:19,556 - INFO - Epoch [5/120], alpha for ImgNet: 2.2361, alpha for TxtNet: 2.2361
+2022-12-18 21:57:54,023 - INFO - Epoch [5/120], Iter [156/312] Loss1: 0.2036 Loss2: 0.5058 Total Loss: 0.7094
+2022-12-18 21:58:27,036 - INFO - Epoch [5/120], Iter [312/312] Loss1: 0.2421 Loss2: 0.4890 Total Loss: 0.7311
+2022-12-18 21:58:27,139 - INFO - Epoch [6/120], alpha for ImgNet: 2.4495, alpha for TxtNet: 2.4495
+2022-12-18 21:59:01,275 - INFO - Epoch [6/120], Iter [156/312] Loss1: 0.1989 Loss2: 0.5010 Total Loss: 0.6998
+2022-12-18 21:59:34,598 - INFO - Epoch [6/120], Iter [312/312] Loss1: 0.2660 Loss2: 0.4843 Total Loss: 0.7503
+2022-12-18 21:59:34,754 - INFO - Epoch [7/120], alpha for ImgNet: 2.6458, alpha for TxtNet: 2.6458
+2022-12-18 22:00:09,105 - INFO - Epoch [7/120], Iter [156/312] Loss1: 0.2644 Loss2: 0.4206 Total Loss: 0.6850
+2022-12-18 22:00:42,133 - INFO - Epoch [7/120], Iter [312/312] Loss1: 0.2679 Loss2: 0.4667 Total Loss: 0.7345
+2022-12-18 22:00:42,274 - INFO - Epoch [8/120], alpha for ImgNet: 2.8284, alpha for TxtNet: 2.8284
+2022-12-18 22:01:16,506 - INFO - Epoch [8/120], Iter [156/312] Loss1: 0.2509 Loss2: 0.4490 Total Loss: 0.6999
+2022-12-18 22:01:49,670 - INFO - Epoch [8/120], Iter [312/312] Loss1: 0.2689 Loss2: 0.4396 Total Loss: 0.7084
+2022-12-18 22:01:49,779 - INFO - Epoch [9/120], alpha for ImgNet: 3.0000, alpha for TxtNet: 3.0000
+2022-12-18 22:02:23,544 - INFO - Epoch [9/120], Iter [156/312] Loss1: 0.2350 Loss2: 0.4466 Total Loss: 0.6816
+2022-12-18 22:02:56,318 - INFO - Epoch [9/120], Iter [312/312] Loss1: 0.2748 Loss2: 0.4701 Total Loss: 0.7449
+2022-12-18 22:02:56,451 - INFO - Epoch [10/120], alpha for ImgNet: 3.1623, alpha for TxtNet: 3.1623
+2022-12-18 22:03:30,708 - INFO - Epoch [10/120], Iter [156/312] Loss1: 0.2414 Loss2: 0.4381 Total Loss: 0.6795
+2022-12-18 22:04:03,729 - INFO - Epoch [10/120], Iter [312/312] Loss1: 0.2466 Loss2: 0.4396 Total Loss: 0.6862
+2022-12-18 22:04:03,842 - INFO - Epoch [11/120], alpha for ImgNet: 3.3166, alpha for TxtNet: 3.3166
+2022-12-18 22:04:38,152 - INFO - Epoch [11/120], Iter [156/312] Loss1: 0.2498 Loss2: 0.4621 Total Loss: 0.7118
+2022-12-18 22:05:11,246 - INFO - Epoch [11/120], Iter [312/312] Loss1: 0.2582 Loss2: 0.4474 Total Loss: 0.7056
+2022-12-18 22:05:11,405 - INFO - Epoch [12/120], alpha for ImgNet: 3.4641, alpha for TxtNet: 3.4641
+2022-12-18 22:05:44,894 - INFO - Epoch [12/120], Iter [156/312] Loss1: 0.2451 Loss2: 0.4242 Total Loss: 0.6694
+2022-12-18 22:06:18,046 - INFO - Epoch [12/120], Iter [312/312] Loss1: 0.2326 Loss2: 0.4495 Total Loss: 0.6821
+2022-12-18 22:06:18,200 - INFO - Epoch [13/120], alpha for ImgNet: 3.6056, alpha for TxtNet: 3.6056
+2022-12-18 22:06:51,991 - INFO - Epoch [13/120], Iter [156/312] Loss1: 0.2666 Loss2: 0.4383 Total Loss: 0.7049
+2022-12-18 22:07:24,882 - INFO - Epoch [13/120], Iter [312/312] Loss1: 0.2537 Loss2: 0.4000 Total Loss: 0.6537
+2022-12-18 22:07:25,042 - INFO - Epoch [14/120], alpha for ImgNet: 3.7417, alpha for TxtNet: 3.7417
+2022-12-18 22:07:59,181 - INFO - Epoch [14/120], Iter [156/312] Loss1: 0.2831 Loss2: 0.4238 Total Loss: 0.7069
+2022-12-18 22:08:32,380 - INFO - Epoch [14/120], Iter [312/312] Loss1: 0.2866 Loss2: 0.4802 Total Loss: 0.7668
+2022-12-18 22:08:32,532 - INFO - Epoch [15/120], alpha for ImgNet: 3.8730, alpha for TxtNet: 3.8730
+2022-12-18 22:09:06,766 - INFO - Epoch [15/120], Iter [156/312] Loss1: 0.2137 Loss2: 0.4275 Total Loss: 0.6413
+2022-12-18 22:09:40,228 - INFO - Epoch [15/120], Iter [312/312] Loss1: 0.2378 Loss2: 0.4563 Total Loss: 0.6941
+2022-12-18 22:09:40,354 - INFO - Epoch [16/120], alpha for ImgNet: 4.0000, alpha for TxtNet: 4.0000
+2022-12-18 22:10:14,786 - INFO - Epoch [16/120], Iter [156/312] Loss1: 0.2169 Loss2: 0.4624 Total Loss: 0.6792
+2022-12-18 22:10:47,472 - INFO - Epoch [16/120], Iter [312/312] Loss1: 0.2542 Loss2: 0.4376 Total Loss: 0.6918
+2022-12-18 22:10:47,615 - INFO - Epoch [17/120], alpha for ImgNet: 4.1231, alpha for TxtNet: 4.1231
+2022-12-18 22:11:21,925 - INFO - Epoch [17/120], Iter [156/312] Loss1: 0.2103 Loss2: 0.4497 Total Loss: 0.6600
+2022-12-18 22:11:55,433 - INFO - Epoch [17/120], Iter [312/312] Loss1: 0.2312 Loss2: 0.4659 Total Loss: 0.6971
+2022-12-18 22:11:55,582 - INFO - Epoch [18/120], alpha for ImgNet: 4.2426, alpha for TxtNet: 4.2426
+2022-12-18 22:12:29,574 - INFO - Epoch [18/120], Iter [156/312] Loss1: 0.2337 Loss2: 0.3919 Total Loss: 0.6256
+2022-12-18 22:13:02,672 - INFO - Epoch [18/120], Iter [312/312] Loss1: 0.2241 Loss2: 0.4781 Total Loss: 0.7023
+2022-12-18 22:13:02,813 - INFO - Epoch [19/120], alpha for ImgNet: 4.3589, alpha for TxtNet: 4.3589
+2022-12-18 22:13:37,249 - INFO - Epoch [19/120], Iter [156/312] Loss1: 0.2485 Loss2: 0.4153 Total Loss: 0.6638
+2022-12-18 22:14:10,183 - INFO - Epoch [19/120], Iter [312/312] Loss1: 0.2337 Loss2: 0.4050 Total Loss: 0.6387
+2022-12-18 22:14:10,305 - INFO - Epoch [20/120], alpha for ImgNet: 4.4721, alpha for TxtNet: 4.4721
+2022-12-18 22:14:44,782 - INFO - Epoch [20/120], Iter [156/312] Loss1: 0.2604 Loss2: 0.3888 Total Loss: 0.6492
+2022-12-18 22:15:18,302 - INFO - Epoch [20/120], Iter [312/312] Loss1: 0.2465 Loss2: 0.4046 Total Loss: 0.6511
+2022-12-18 22:15:18,440 - INFO - Epoch [21/120], alpha for ImgNet: 4.5826, alpha for TxtNet: 4.5826
+2022-12-18 22:15:52,305 - INFO - Epoch [21/120], Iter [156/312] Loss1: 0.2115 Loss2: 0.4308 Total Loss: 0.6423
+2022-12-18 22:16:25,500 - INFO - Epoch [21/120], Iter [312/312] Loss1: 0.2244 Loss2: 0.4314 Total Loss: 0.6558
+2022-12-18 22:16:25,635 - INFO - Epoch [22/120], alpha for ImgNet: 4.6904, alpha for TxtNet: 4.6904
+2022-12-18 22:16:59,530 - INFO - Epoch [22/120], Iter [156/312] Loss1: 0.2461 Loss2: 0.4068 Total Loss: 0.6529
+2022-12-18 22:17:32,597 - INFO - Epoch [22/120], Iter [312/312] Loss1: 0.2169 Loss2: 0.4363 Total Loss: 0.6531
+2022-12-18 22:17:32,760 - INFO - Epoch [23/120], alpha for ImgNet: 4.7958, alpha for TxtNet: 4.7958
+2022-12-18 22:18:06,904 - INFO - Epoch [23/120], Iter [156/312] Loss1: 0.2395 Loss2: 0.4409 Total Loss: 0.6803
+2022-12-18 22:18:39,972 - INFO - Epoch [23/120], Iter [312/312] Loss1: 0.2434 Loss2: 0.3796 Total Loss: 0.6230
+2022-12-18 22:18:40,124 - INFO - Epoch [24/120], alpha for ImgNet: 4.8990, alpha for TxtNet: 4.8990
+2022-12-18 22:19:14,433 - INFO - Epoch [24/120], Iter [156/312] Loss1: 0.2036 Loss2: 0.3840 Total Loss: 0.5876
+2022-12-18 22:19:47,566 - INFO - Epoch [24/120], Iter [312/312] Loss1: 0.2352 Loss2: 0.3899 Total Loss: 0.6251
+2022-12-18 22:19:47,707 - INFO - Epoch [25/120], alpha for ImgNet: 5.0000, alpha for TxtNet: 5.0000
+2022-12-18 22:20:21,551 - INFO - Epoch [25/120], Iter [156/312] Loss1: 0.2687 Loss2: 0.4101 Total Loss: 0.6787
+2022-12-18 22:20:54,442 - INFO - Epoch [25/120], Iter [312/312] Loss1: 0.2182 Loss2: 0.3937 Total Loss: 0.6119
+2022-12-18 22:20:54,607 - INFO - Epoch [26/120], alpha for ImgNet: 5.0990, alpha for TxtNet: 5.0990
+2022-12-18 22:21:28,527 - INFO - Epoch [26/120], Iter [156/312] Loss1: 0.2261 Loss2: 0.4134 Total Loss: 0.6395
+2022-12-18 22:22:01,916 - INFO - Epoch [26/120], Iter [312/312] Loss1: 0.2564 Loss2: 0.3792 Total Loss: 0.6355
+2022-12-18 22:22:02,047 - INFO - Epoch [27/120], alpha for ImgNet: 5.1962, alpha for TxtNet: 5.1962
+2022-12-18 22:22:36,202 - INFO - Epoch [27/120], Iter [156/312] Loss1: 0.2460 Loss2: 0.3847 Total Loss: 0.6307
+2022-12-18 22:23:09,151 - INFO - Epoch [27/120], Iter [312/312] Loss1: 0.2537 Loss2: 0.3581 Total Loss: 0.6118
+2022-12-18 22:23:09,261 - INFO - Epoch [28/120], alpha for ImgNet: 5.2915, alpha for TxtNet: 5.2915
+2022-12-18 22:23:43,290 - INFO - Epoch [28/120], Iter [156/312] Loss1: 0.2944 Loss2: 0.3428 Total Loss: 0.6372
+2022-12-18 22:24:16,455 - INFO - Epoch [28/120], Iter [312/312] Loss1: 0.2178 Loss2: 0.4006 Total Loss: 0.6184
+2022-12-18 22:24:16,597 - INFO - Epoch [29/120], alpha for ImgNet: 5.3852, alpha for TxtNet: 5.3852
+2022-12-18 22:24:50,371 - INFO - Epoch [29/120], Iter [156/312] Loss1: 0.2300 Loss2: 0.3895 Total Loss: 0.6195
+2022-12-18 22:25:23,559 - INFO - Epoch [29/120], Iter [312/312] Loss1: 0.2145 Loss2: 0.3840 Total Loss: 0.5985
+2022-12-18 22:25:23,675 - INFO - Epoch [30/120], alpha for ImgNet: 5.4772, alpha for TxtNet: 5.4772
+2022-12-18 22:25:57,678 - INFO - Epoch [30/120], Iter [156/312] Loss1: 0.2668 Loss2: 0.4008 Total Loss: 0.6676
+2022-12-18 22:26:30,629 - INFO - Epoch [30/120], Iter [312/312] Loss1: 0.2690 Loss2: 0.3789 Total Loss: 0.6479
+2022-12-18 22:26:30,795 - INFO - Epoch [31/120], alpha for ImgNet: 5.5678, alpha for TxtNet: 5.5678
+2022-12-18 22:27:05,089 - INFO - Epoch [31/120], Iter [156/312] Loss1: 0.2215 Loss2: 0.4028 Total Loss: 0.6243
+2022-12-18 22:27:37,741 - INFO - Epoch [31/120], Iter [312/312] Loss1: 0.2093 Loss2: 0.3686 Total Loss: 0.5779
+2022-12-18 22:27:37,872 - INFO - Epoch [32/120], alpha for ImgNet: 5.6569, alpha for TxtNet: 5.6569
+2022-12-18 22:28:12,177 - INFO - Epoch [32/120], Iter [156/312] Loss1: 0.2515 Loss2: 0.3887 Total Loss: 0.6401
+2022-12-18 22:28:45,034 - INFO - Epoch [32/120], Iter [312/312] Loss1: 0.2356 Loss2: 0.3582 Total Loss: 0.5938
+2022-12-18 22:28:45,203 - INFO - Epoch [33/120], alpha for ImgNet: 5.7446, alpha for TxtNet: 5.7446
+2022-12-18 22:29:19,166 - INFO - Epoch [33/120], Iter [156/312] Loss1: 0.2774 Loss2: 0.3312 Total Loss: 0.6086
+2022-12-18 22:29:52,286 - INFO - Epoch [33/120], Iter [312/312] Loss1: 0.2186 Loss2: 0.3821 Total Loss: 0.6006
+2022-12-18 22:29:52,432 - INFO - Epoch [34/120], alpha for ImgNet: 5.8310, alpha for TxtNet: 5.8310
+2022-12-18 22:30:26,889 - INFO - Epoch [34/120], Iter [156/312] Loss1: 0.2509 Loss2: 0.3770 Total Loss: 0.6279
+2022-12-18 22:30:59,733 - INFO - Epoch [34/120], Iter [312/312] Loss1: 0.2011 Loss2: 0.3498 Total Loss: 0.5509
+2022-12-18 22:30:59,884 - INFO - Epoch [35/120], alpha for ImgNet: 5.9161, alpha for TxtNet: 5.9161
+2022-12-18 22:31:33,625 - INFO - Epoch [35/120], Iter [156/312] Loss1: 0.2362 Loss2: 0.3301 Total Loss: 0.5663
+2022-12-18 22:32:06,376 - INFO - Epoch [35/120], Iter [312/312] Loss1: 0.2068 Loss2: 0.3543 Total Loss: 0.5611
+2022-12-18 22:32:06,503 - INFO - Epoch [36/120], alpha for ImgNet: 6.0000, alpha for TxtNet: 6.0000
+2022-12-18 22:32:40,328 - INFO - Epoch [36/120], Iter [156/312] Loss1: 0.2303 Loss2: 0.3727 Total Loss: 0.6030
+2022-12-18 22:33:13,616 - INFO - Epoch [36/120], Iter [312/312] Loss1: 0.2120 Loss2: 0.3899 Total Loss: 0.6019
+2022-12-18 22:33:13,777 - INFO - Epoch [37/120], alpha for ImgNet: 6.0828, alpha for TxtNet: 6.0828
+2022-12-18 22:33:48,069 - INFO - Epoch [37/120], Iter [156/312] Loss1: 0.2288 Loss2: 0.4076 Total Loss: 0.6364
+2022-12-18 22:34:20,722 - INFO - Epoch [37/120], Iter [312/312] Loss1: 0.2538 Loss2: 0.3382 Total Loss: 0.5921
+2022-12-18 22:34:20,877 - INFO - Epoch [38/120], alpha for ImgNet: 6.1644, alpha for TxtNet: 6.1644
+2022-12-18 22:34:54,828 - INFO - Epoch [38/120], Iter [156/312] Loss1: 0.2567 Loss2: 0.3837 Total Loss: 0.6404
+2022-12-18 22:35:28,222 - INFO - Epoch [38/120], Iter [312/312] Loss1: 0.2390 Loss2: 0.3549 Total Loss: 0.5939
+2022-12-18 22:35:28,318 - INFO - Epoch [39/120], alpha for ImgNet: 6.2450, alpha for TxtNet: 6.2450
+2022-12-18 22:36:02,549 - INFO - Epoch [39/120], Iter [156/312] Loss1: 0.2278 Loss2: 0.3639 Total Loss: 0.5917
+2022-12-18 22:36:35,662 - INFO - Epoch [39/120], Iter [312/312] Loss1: 0.2322 Loss2: 0.3544 Total Loss: 0.5866
+2022-12-18 22:36:35,779 - INFO - Epoch [40/120], alpha for ImgNet: 6.3246, alpha for TxtNet: 6.3246
+2022-12-18 22:37:09,850 - INFO - Epoch [40/120], Iter [156/312] Loss1: 0.2178 Loss2: 0.3771 Total Loss: 0.5949
+2022-12-18 22:37:42,624 - INFO - Epoch [40/120], Iter [312/312] Loss1: 0.2444 Loss2: 0.3768 Total Loss: 0.6212
+2022-12-18 22:38:51,542 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-18 22:38:51,544 - INFO - MAP of Image to Text: 0.917, MAP of Text to Image: 0.927
+2022-12-18 22:38:51,544 - INFO - --------------------------------------------------------------------
+2022-12-18 22:39:01,657 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-18 22:39:01,658 - INFO - MAP of Image to Text: 0.782, MAP of Text to Image: 0.833
+2022-12-18 22:39:01,658 - INFO - --------------------------------------------------------------------
+2022-12-18 22:39:04,991 - INFO - **********Save the trained model successfully.**********
+2022-12-18 22:39:04,992 - INFO - #########is best:1.6151 #########
+2022-12-18 22:39:05,044 - INFO - Epoch [41/120], alpha for ImgNet: 6.4031, alpha for TxtNet: 6.4031
+2022-12-18 22:39:38,638 - INFO - Epoch [41/120], Iter [156/312] Loss1: 0.2668 Loss2: 0.3518 Total Loss: 0.6187
+2022-12-18 22:40:11,355 - INFO - Epoch [41/120], Iter [312/312] Loss1: 0.2446 Loss2: 0.3533 Total Loss: 0.5979
+2022-12-18 22:40:11,497 - INFO - Epoch [42/120], alpha for ImgNet: 6.4807, alpha for TxtNet: 6.4807
+2022-12-18 22:40:45,784 - INFO - Epoch [42/120], Iter [156/312] Loss1: 0.1971 Loss2: 0.3822 Total Loss: 0.5794
+2022-12-18 22:41:18,883 - INFO - Epoch [42/120], Iter [312/312] Loss1: 0.2510 Loss2: 0.3115 Total Loss: 0.5625
+2022-12-18 22:41:19,005 - INFO - Epoch [43/120], alpha for ImgNet: 6.5574, alpha for TxtNet: 6.5574
+2022-12-18 22:41:53,374 - INFO - Epoch [43/120], Iter [156/312] Loss1: 0.2407 Loss2: 0.3465 Total Loss: 0.5872
+2022-12-18 22:42:26,246 - INFO - Epoch [43/120], Iter [312/312] Loss1: 0.2319 Loss2: 0.3414 Total Loss: 0.5733
+2022-12-18 22:42:26,376 - INFO - Epoch [44/120], alpha for ImgNet: 6.6332, alpha for TxtNet: 6.6332
+2022-12-18 22:43:00,521 - INFO - Epoch [44/120], Iter [156/312] Loss1: 0.2782 Loss2: 0.3299 Total Loss: 0.6081
+2022-12-18 22:43:33,544 - INFO - Epoch [44/120], Iter [312/312] Loss1: 0.2536 Loss2: 0.3144 Total Loss: 0.5680
+2022-12-18 22:43:33,675 - INFO - Epoch [45/120], alpha for ImgNet: 6.7082, alpha for TxtNet: 6.7082
+2022-12-18 22:44:07,566 - INFO - Epoch [45/120], Iter [156/312] Loss1: 0.2239 Loss2: 0.3444 Total Loss: 0.5683
+2022-12-18 22:44:40,443 - INFO - Epoch [45/120], Iter [312/312] Loss1: 0.2187 Loss2: 0.3196 Total Loss: 0.5383
+2022-12-18 22:44:40,597 - INFO - Epoch [46/120], alpha for ImgNet: 6.7823, alpha for TxtNet: 6.7823
+2022-12-18 22:45:14,662 - INFO - Epoch [46/120], Iter [156/312] Loss1: 0.2003 Loss2: 0.3460 Total Loss: 0.5462
+2022-12-18 22:45:47,471 - INFO - Epoch [46/120], Iter [312/312] Loss1: 0.2055 Loss2: 0.3437 Total Loss: 0.5492
+2022-12-18 22:45:47,628 - INFO - Epoch [47/120], alpha for ImgNet: 6.8557, alpha for TxtNet: 6.8557
+2022-12-18 22:46:22,280 - INFO - Epoch [47/120], Iter [156/312] Loss1: 0.2105 Loss2: 0.3309 Total Loss: 0.5414
+2022-12-18 22:46:55,708 - INFO - Epoch [47/120], Iter [312/312] Loss1: 0.1827 Loss2: 0.3907 Total Loss: 0.5734
+2022-12-18 22:46:55,868 - INFO - Epoch [48/120], alpha for ImgNet: 6.9282, alpha for TxtNet: 6.9282
+2022-12-18 22:47:29,999 - INFO - Epoch [48/120], Iter [156/312] Loss1: 0.2198 Loss2: 0.3890 Total Loss: 0.6087
+2022-12-18 22:48:02,962 - INFO - Epoch [48/120], Iter [312/312] Loss1: 0.2338 Loss2: 0.3400 Total Loss: 0.5738
+2022-12-18 22:48:03,117 - INFO - Epoch [49/120], alpha for ImgNet: 7.0000, alpha for TxtNet: 7.0000
+2022-12-18 22:48:37,314 - INFO - Epoch [49/120], Iter [156/312] Loss1: 0.2344 Loss2: 0.2876 Total Loss: 0.5220
+2022-12-18 22:49:10,277 - INFO - Epoch [49/120], Iter [312/312] Loss1: 0.2082 Loss2: 0.3214 Total Loss: 0.5296
+2022-12-18 22:49:10,438 - INFO - Epoch [50/120], alpha for ImgNet: 7.0711, alpha for TxtNet: 7.0711
+2022-12-18 22:49:44,778 - INFO - Epoch [50/120], Iter [156/312] Loss1: 0.2298 Loss2: 0.3096 Total Loss: 0.5394
+2022-12-18 22:50:18,112 - INFO - Epoch [50/120], Iter [312/312] Loss1: 0.2078 Loss2: 0.3649 Total Loss: 0.5728
+2022-12-18 22:50:18,231 - INFO - Epoch [51/120], alpha for ImgNet: 7.1414, alpha for TxtNet: 7.1414
+2022-12-18 22:50:51,693 - INFO - Epoch [51/120], Iter [156/312] Loss1: 0.2446 Loss2: 0.3615 Total Loss: 0.6061
+2022-12-18 22:51:24,651 - INFO - Epoch [51/120], Iter [312/312] Loss1: 0.2725 Loss2: 0.3278 Total Loss: 0.6003
+2022-12-18 22:51:24,791 - INFO - Epoch [52/120], alpha for ImgNet: 7.2111, alpha for TxtNet: 7.2111
+2022-12-18 22:51:58,755 - INFO - Epoch [52/120], Iter [156/312] Loss1: 0.2162 Loss2: 0.3729 Total Loss: 0.5891
+2022-12-18 22:52:31,809 - INFO - Epoch [52/120], Iter [312/312] Loss1: 0.2117 Loss2: 0.3425 Total Loss: 0.5542
+2022-12-18 22:52:31,960 - INFO - Epoch [53/120], alpha for ImgNet: 7.2801, alpha for TxtNet: 7.2801
+2022-12-18 22:53:05,813 - INFO - Epoch [53/120], Iter [156/312] Loss1: 0.2494 Loss2: 0.3424 Total Loss: 0.5918
+2022-12-18 22:53:38,371 - INFO - Epoch [53/120], Iter [312/312] Loss1: 0.2290 Loss2: 0.3482 Total Loss: 0.5771
+2022-12-18 22:53:38,490 - INFO - Epoch [54/120], alpha for ImgNet: 7.3485, alpha for TxtNet: 7.3485
+2022-12-18 22:54:12,398 - INFO - Epoch [54/120], Iter [156/312] Loss1: 0.2367 Loss2: 0.2971 Total Loss: 0.5338
+2022-12-18 22:54:45,749 - INFO - Epoch [54/120], Iter [312/312] Loss1: 0.2251 Loss2: 0.3128 Total Loss: 0.5379
+2022-12-18 22:54:45,907 - INFO - Epoch [55/120], alpha for ImgNet: 7.4162, alpha for TxtNet: 7.4162
+2022-12-18 22:55:19,896 - INFO - Epoch [55/120], Iter [156/312] Loss1: 0.2169 Loss2: 0.3669 Total Loss: 0.5838
+2022-12-18 22:55:53,262 - INFO - Epoch [55/120], Iter [312/312] Loss1: 0.1916 Loss2: 0.3629 Total Loss: 0.5545
+2022-12-18 22:55:53,399 - INFO - Epoch [56/120], alpha for ImgNet: 7.4833, alpha for TxtNet: 7.4833
+2022-12-18 22:56:26,764 - INFO - Epoch [56/120], Iter [156/312] Loss1: 0.1952 Loss2: 0.3221 Total Loss: 0.5173
+2022-12-18 22:56:59,817 - INFO - Epoch [56/120], Iter [312/312] Loss1: 0.2310 Loss2: 0.3384 Total Loss: 0.5694
+2022-12-18 22:56:59,942 - INFO - Epoch [57/120], alpha for ImgNet: 7.5498, alpha for TxtNet: 7.5498
+2022-12-18 22:57:33,969 - INFO - Epoch [57/120], Iter [156/312] Loss1: 0.2414 Loss2: 0.3768 Total Loss: 0.6182
+2022-12-18 22:58:07,245 - INFO - Epoch [57/120], Iter [312/312] Loss1: 0.2633 Loss2: 0.3235 Total Loss: 0.5868
+2022-12-18 22:58:07,373 - INFO - Epoch [58/120], alpha for ImgNet: 7.6158, alpha for TxtNet: 7.6158
+2022-12-18 22:58:41,691 - INFO - Epoch [58/120], Iter [156/312] Loss1: 0.1887 Loss2: 0.3562 Total Loss: 0.5449
+2022-12-18 22:59:14,651 - INFO - Epoch [58/120], Iter [312/312] Loss1: 0.2176 Loss2: 0.3136 Total Loss: 0.5312
+2022-12-18 22:59:14,787 - INFO - Epoch [59/120], alpha for ImgNet: 7.6811, alpha for TxtNet: 7.6811
+2022-12-18 22:59:48,423 - INFO - Epoch [59/120], Iter [156/312] Loss1: 0.2512 Loss2: 0.3129 Total Loss: 0.5641
+2022-12-18 23:00:21,851 - INFO - Epoch [59/120], Iter [312/312] Loss1: 0.2216 Loss2: 0.3235 Total Loss: 0.5451
+2022-12-18 23:00:21,980 - INFO - Epoch [60/120], alpha for ImgNet: 7.7460, alpha for TxtNet: 7.7460
+2022-12-18 23:00:56,121 - INFO - Epoch [60/120], Iter [156/312] Loss1: 0.2643 Loss2: 0.3349 Total Loss: 0.5991
+2022-12-18 23:01:29,436 - INFO - Epoch [60/120], Iter [312/312] Loss1: 0.2213 Loss2: 0.3343 Total Loss: 0.5556
+2022-12-18 23:01:29,610 - INFO - Epoch [61/120], alpha for ImgNet: 7.8102, alpha for TxtNet: 7.8102
+2022-12-18 23:02:03,280 - INFO - Epoch [61/120], Iter [156/312] Loss1: 0.2284 Loss2: 0.2980 Total Loss: 0.5264
+2022-12-18 23:02:36,186 - INFO - Epoch [61/120], Iter [312/312] Loss1: 0.2131 Loss2: 0.3324 Total Loss: 0.5455
+2022-12-18 23:02:36,343 - INFO - Epoch [62/120], alpha for ImgNet: 7.8740, alpha for TxtNet: 7.8740
+2022-12-18 23:03:10,714 - INFO - Epoch [62/120], Iter [156/312] Loss1: 0.2350 Loss2: 0.3201 Total Loss: 0.5551
+2022-12-18 23:03:43,943 - INFO - Epoch [62/120], Iter [312/312] Loss1: 0.2010 Loss2: 0.3174 Total Loss: 0.5184
+2022-12-18 23:03:44,091 - INFO - Epoch [63/120], alpha for ImgNet: 7.9373, alpha for TxtNet: 7.9373
+2022-12-18 23:04:17,564 - INFO - Epoch [63/120], Iter [156/312] Loss1: 0.2200 Loss2: 0.2884 Total Loss: 0.5083
+2022-12-18 23:04:50,706 - INFO - Epoch [63/120], Iter [312/312] Loss1: 0.2241 Loss2: 0.3253 Total Loss: 0.5494
+2022-12-18 23:04:50,850 - INFO - Epoch [64/120], alpha for ImgNet: 8.0000, alpha for TxtNet: 8.0000
+2022-12-18 23:05:25,155 - INFO - Epoch [64/120], Iter [156/312] Loss1: 0.2726 Loss2: 0.3311 Total Loss: 0.6037
+2022-12-18 23:05:58,454 - INFO - Epoch [64/120], Iter [312/312] Loss1: 0.2056 Loss2: 0.2695 Total Loss: 0.4751
+2022-12-18 23:05:58,606 - INFO - Epoch [65/120], alpha for ImgNet: 8.0623, alpha for TxtNet: 8.0623
+2022-12-18 23:06:32,804 - INFO - Epoch [65/120], Iter [156/312] Loss1: 0.2183 Loss2: 0.3037 Total Loss: 0.5220
+2022-12-18 23:07:05,908 - INFO - Epoch [65/120], Iter [312/312] Loss1: 0.2422 Loss2: 0.3264 Total Loss: 0.5686
+2022-12-18 23:07:06,042 - INFO - Epoch [66/120], alpha for ImgNet: 8.1240, alpha for TxtNet: 8.1240
+2022-12-18 23:07:39,842 - INFO - Epoch [66/120], Iter [156/312] Loss1: 0.2394 Loss2: 0.3419 Total Loss: 0.5814
+2022-12-18 23:08:12,960 - INFO - Epoch [66/120], Iter [312/312] Loss1: 0.2210 Loss2: 0.3231 Total Loss: 0.5441
+2022-12-18 23:08:13,123 - INFO - Epoch [67/120], alpha for ImgNet: 8.1854, alpha for TxtNet: 8.1854
+2022-12-18 23:08:47,577 - INFO - Epoch [67/120], Iter [156/312] Loss1: 0.2078 Loss2: 0.2875 Total Loss: 0.4953
+2022-12-18 23:09:20,776 - INFO - Epoch [67/120], Iter [312/312] Loss1: 0.1718 Loss2: 0.3218 Total Loss: 0.4936
+2022-12-18 23:09:20,944 - INFO - Epoch [68/120], alpha for ImgNet: 8.2462, alpha for TxtNet: 8.2462
+2022-12-18 23:09:55,265 - INFO - Epoch [68/120], Iter [156/312] Loss1: 0.2087 Loss2: 0.3407 Total Loss: 0.5495
+2022-12-18 23:10:28,178 - INFO - Epoch [68/120], Iter [312/312] Loss1: 0.2095 Loss2: 0.3097 Total Loss: 0.5192
+2022-12-18 23:10:28,318 - INFO - Epoch [69/120], alpha for ImgNet: 8.3066, alpha for TxtNet: 8.3066
+2022-12-18 23:11:01,790 - INFO - Epoch [69/120], Iter [156/312] Loss1: 0.2095 Loss2: 0.2701 Total Loss: 0.4796
+2022-12-18 23:11:35,209 - INFO - Epoch [69/120], Iter [312/312] Loss1: 0.2358 Loss2: 0.3001 Total Loss: 0.5359
+2022-12-18 23:11:35,355 - INFO - Epoch [70/120], alpha for ImgNet: 8.3666, alpha for TxtNet: 8.3666
+2022-12-18 23:12:09,675 - INFO - Epoch [70/120], Iter [156/312] Loss1: 0.1765 Loss2: 0.3291 Total Loss: 0.5056
+2022-12-18 23:12:42,626 - INFO - Epoch [70/120], Iter [312/312] Loss1: 0.2408 Loss2: 0.3361 Total Loss: 0.5769
+2022-12-18 23:12:42,766 - INFO - Epoch [71/120], alpha for ImgNet: 8.4261, alpha for TxtNet: 8.4261
+2022-12-18 23:13:16,888 - INFO - Epoch [71/120], Iter [156/312] Loss1: 0.2075 Loss2: 0.3069 Total Loss: 0.5144
+2022-12-18 23:13:49,726 - INFO - Epoch [71/120], Iter [312/312] Loss1: 0.2470 Loss2: 0.3096 Total Loss: 0.5566
+2022-12-18 23:13:49,855 - INFO - Epoch [72/120], alpha for ImgNet: 8.4853, alpha for TxtNet: 8.4853
+2022-12-18 23:14:23,649 - INFO - Epoch [72/120], Iter [156/312] Loss1: 0.1820 Loss2: 0.3171 Total Loss: 0.4991
+2022-12-18 23:14:57,060 - INFO - Epoch [72/120], Iter [312/312] Loss1: 0.2228 Loss2: 0.3556 Total Loss: 0.5784
+2022-12-18 23:14:57,215 - INFO - Epoch [73/120], alpha for ImgNet: 8.5440, alpha for TxtNet: 8.5440
+2022-12-18 23:15:31,537 - INFO - Epoch [73/120], Iter [156/312] Loss1: 0.1936 Loss2: 0.2794 Total Loss: 0.4729
+2022-12-18 23:16:04,719 - INFO - Epoch [73/120], Iter [312/312] Loss1: 0.2736 Loss2: 0.2858 Total Loss: 0.5594
+2022-12-18 23:16:04,848 - INFO - Epoch [74/120], alpha for ImgNet: 8.6023, alpha for TxtNet: 8.6023
+2022-12-18 23:16:38,459 - INFO - Epoch [74/120], Iter [156/312] Loss1: 0.2108 Loss2: 0.3298 Total Loss: 0.5406
+2022-12-18 23:17:11,253 - INFO - Epoch [74/120], Iter [312/312] Loss1: 0.2644 Loss2: 0.2826 Total Loss: 0.5470
+2022-12-18 23:17:11,406 - INFO - Epoch [75/120], alpha for ImgNet: 8.6603, alpha for TxtNet: 8.6603
+2022-12-18 23:17:45,805 - INFO - Epoch [75/120], Iter [156/312] Loss1: 0.2019 Loss2: 0.3361 Total Loss: 0.5379
+2022-12-18 23:18:18,818 - INFO - Epoch [75/120], Iter [312/312] Loss1: 0.1615 Loss2: 0.2892 Total Loss: 0.4507
+2022-12-18 23:18:18,951 - INFO - Epoch [76/120], alpha for ImgNet: 8.7178, alpha for TxtNet: 8.7178
+2022-12-18 23:18:52,452 - INFO - Epoch [76/120], Iter [156/312] Loss1: 0.1860 Loss2: 0.3446 Total Loss: 0.5306
+2022-12-18 23:19:25,972 - INFO - Epoch [76/120], Iter [312/312] Loss1: 0.2131 Loss2: 0.3057 Total Loss: 0.5187
+2022-12-18 23:19:26,112 - INFO - Epoch [77/120], alpha for ImgNet: 8.7750, alpha for TxtNet: 8.7750
+2022-12-18 23:19:59,642 - INFO - Epoch [77/120], Iter [156/312] Loss1: 0.2205 Loss2: 0.2726 Total Loss: 0.4931
+2022-12-18 23:20:32,755 - INFO - Epoch [77/120], Iter [312/312] Loss1: 0.2444 Loss2: 0.3145 Total Loss: 0.5589
+2022-12-18 23:20:32,899 - INFO - Epoch [78/120], alpha for ImgNet: 8.8318, alpha for TxtNet: 8.8318
+2022-12-18 23:21:07,547 - INFO - Epoch [78/120], Iter [156/312] Loss1: 0.1984 Loss2: 0.3072 Total Loss: 0.5056
+2022-12-18 23:21:40,389 - INFO - Epoch [78/120], Iter [312/312] Loss1: 0.2122 Loss2: 0.3039 Total Loss: 0.5161
+2022-12-18 23:21:40,525 - INFO - Epoch [79/120], alpha for ImgNet: 8.8882, alpha for TxtNet: 8.8882
+2022-12-18 23:22:14,911 - INFO - Epoch [79/120], Iter [156/312] Loss1: 0.2536 Loss2: 0.2825 Total Loss: 0.5361
+2022-12-18 23:22:47,692 - INFO - Epoch [79/120], Iter [312/312] Loss1: 0.2175 Loss2: 0.3093 Total Loss: 0.5268
+2022-12-18 23:22:47,831 - INFO - Epoch [80/120], alpha for ImgNet: 8.9443, alpha for TxtNet: 8.9443
+2022-12-18 23:23:23,541 - INFO - Epoch [80/120], Iter [156/312] Loss1: 0.1556 Loss2: 0.2834 Total Loss: 0.4390
+2022-12-18 23:23:57,032 - INFO - Epoch [80/120], Iter [312/312] Loss1: 0.2353 Loss2: 0.3169 Total Loss: 0.5522
+2022-12-18 23:25:06,984 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-18 23:25:06,986 - INFO - MAP of Image to Text: 0.931, MAP of Text to Image: 0.924
+2022-12-18 23:25:06,986 - INFO - --------------------------------------------------------------------
+2022-12-18 23:25:18,947 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-18 23:25:18,948 - INFO - MAP of Image to Text: 0.803, MAP of Text to Image: 0.840
+2022-12-18 23:25:18,949 - INFO - --------------------------------------------------------------------
+2022-12-18 23:25:22,313 - INFO - **********Save the trained model successfully.**********
+2022-12-18 23:25:22,314 - INFO - #########is best:1.6431 #########
+2022-12-18 23:25:22,351 - INFO - Epoch [81/120], alpha for ImgNet: 9.0000, alpha for TxtNet: 9.0000
+2022-12-18 23:25:55,749 - INFO - Epoch [81/120], Iter [156/312] Loss1: 0.2368 Loss2: 0.3014 Total Loss: 0.5382
+2022-12-18 23:26:28,919 - INFO - Epoch [81/120], Iter [312/312] Loss1: 0.1883 Loss2: 0.3212 Total Loss: 0.5095
+2022-12-18 23:26:29,068 - INFO - Epoch [82/120], alpha for ImgNet: 9.0554, alpha for TxtNet: 9.0554
+2022-12-18 23:27:03,283 - INFO - Epoch [82/120], Iter [156/312] Loss1: 0.2119 Loss2: 0.3002 Total Loss: 0.5121
+2022-12-18 23:27:36,178 - INFO - Epoch [82/120], Iter [312/312] Loss1: 0.2009 Loss2: 0.2855 Total Loss: 0.4864
+2022-12-18 23:27:36,313 - INFO - Epoch [83/120], alpha for ImgNet: 9.1104, alpha for TxtNet: 9.1104
+2022-12-18 23:28:10,310 - INFO - Epoch [83/120], Iter [156/312] Loss1: 0.2534 Loss2: 0.3079 Total Loss: 0.5613
+2022-12-18 23:28:42,836 - INFO - Epoch [83/120], Iter [312/312] Loss1: 0.1931 Loss2: 0.2871 Total Loss: 0.4802
+2022-12-18 23:28:42,992 - INFO - Epoch [84/120], alpha for ImgNet: 9.1652, alpha for TxtNet: 9.1652
+2022-12-18 23:29:16,899 - INFO - Epoch [84/120], Iter [156/312] Loss1: 0.2433 Loss2: 0.2597 Total Loss: 0.5030
+2022-12-18 23:29:49,957 - INFO - Epoch [84/120], Iter [312/312] Loss1: 0.2373 Loss2: 0.3106 Total Loss: 0.5480
+2022-12-18 23:29:50,098 - INFO - Epoch [85/120], alpha for ImgNet: 9.2195, alpha for TxtNet: 9.2195
+2022-12-18 23:30:24,143 - INFO - Epoch [85/120], Iter [156/312] Loss1: 0.1912 Loss2: 0.2838 Total Loss: 0.4750
+2022-12-18 23:30:57,061 - INFO - Epoch [85/120], Iter [312/312] Loss1: 0.1979 Loss2: 0.3090 Total Loss: 0.5068
+2022-12-18 23:30:57,204 - INFO - Epoch [86/120], alpha for ImgNet: 9.2736, alpha for TxtNet: 9.2736
+2022-12-18 23:31:30,693 - INFO - Epoch [86/120], Iter [156/312] Loss1: 0.1893 Loss2: 0.3023 Total Loss: 0.4915
+2022-12-18 23:32:04,043 - INFO - Epoch [86/120], Iter [312/312] Loss1: 0.2226 Loss2: 0.3447 Total Loss: 0.5673
+2022-12-18 23:32:04,191 - INFO - Epoch [87/120], alpha for ImgNet: 9.3274, alpha for TxtNet: 9.3274
+2022-12-18 23:32:38,267 - INFO - Epoch [87/120], Iter [156/312] Loss1: 0.1954 Loss2: 0.3613 Total Loss: 0.5567
+2022-12-18 23:33:11,598 - INFO - Epoch [87/120], Iter [312/312] Loss1: 0.1919 Loss2: 0.3131 Total Loss: 0.5050
+2022-12-18 23:33:11,692 - INFO - Epoch [88/120], alpha for ImgNet: 9.3808, alpha for TxtNet: 9.3808
+2022-12-18 23:33:45,785 - INFO - Epoch [88/120], Iter [156/312] Loss1: 0.2018 Loss2: 0.3307 Total Loss: 0.5325
+2022-12-18 23:34:18,595 - INFO - Epoch [88/120], Iter [312/312] Loss1: 0.2091 Loss2: 0.2758 Total Loss: 0.4849
+2022-12-18 23:34:18,754 - INFO - Epoch [89/120], alpha for ImgNet: 9.4340, alpha for TxtNet: 9.4340
+2022-12-18 23:34:52,677 - INFO - Epoch [89/120], Iter [156/312] Loss1: 0.1944 Loss2: 0.3019 Total Loss: 0.4963
+2022-12-18 23:35:26,115 - INFO - Epoch [89/120], Iter [312/312] Loss1: 0.1981 Loss2: 0.2937 Total Loss: 0.4918
+2022-12-18 23:35:26,250 - INFO - Epoch [90/120], alpha for ImgNet: 9.4868, alpha for TxtNet: 9.4868
+2022-12-18 23:36:00,622 - INFO - Epoch [90/120], Iter [156/312] Loss1: 0.1918 Loss2: 0.3155 Total Loss: 0.5072
+2022-12-18 23:36:33,920 - INFO - Epoch [90/120], Iter [312/312] Loss1: 0.2278 Loss2: 0.2949 Total Loss: 0.5226
+2022-12-18 23:36:34,063 - INFO - Epoch [91/120], alpha for ImgNet: 9.5394, alpha for TxtNet: 9.5394
+2022-12-18 23:37:07,913 - INFO - Epoch [91/120], Iter [156/312] Loss1: 0.1972 Loss2: 0.2764 Total Loss: 0.4736
+2022-12-18 23:37:41,189 - INFO - Epoch [91/120], Iter [312/312] Loss1: 0.1685 Loss2: 0.2999 Total Loss: 0.4684
+2022-12-18 23:37:41,336 - INFO - Epoch [92/120], alpha for ImgNet: 9.5917, alpha for TxtNet: 9.5917
+2022-12-18 23:38:15,579 - INFO - Epoch [92/120], Iter [156/312] Loss1: 0.2426 Loss2: 0.3103 Total Loss: 0.5529
+2022-12-18 23:38:48,426 - INFO - Epoch [92/120], Iter [312/312] Loss1: 0.1966 Loss2: 0.3059 Total Loss: 0.5025
+2022-12-18 23:38:48,578 - INFO - Epoch [93/120], alpha for ImgNet: 9.6437, alpha for TxtNet: 9.6437
+2022-12-18 23:39:22,331 - INFO - Epoch [93/120], Iter [156/312] Loss1: 0.2070 Loss2: 0.2865 Total Loss: 0.4935
+2022-12-18 23:39:55,458 - INFO - Epoch [93/120], Iter [312/312] Loss1: 0.1772 Loss2: 0.2861 Total Loss: 0.4633
+2022-12-18 23:39:55,591 - INFO - Epoch [94/120], alpha for ImgNet: 9.6954, alpha for TxtNet: 9.6954
+2022-12-18 23:40:28,782 - INFO - Epoch [94/120], Iter [156/312] Loss1: 0.2192 Loss2: 0.3070 Total Loss: 0.5261
+2022-12-18 23:41:02,165 - INFO - Epoch [94/120], Iter [312/312] Loss1: 0.1732 Loss2: 0.2802 Total Loss: 0.4534
+2022-12-18 23:41:02,328 - INFO - Epoch [95/120], alpha for ImgNet: 9.7468, alpha for TxtNet: 9.7468
+2022-12-18 23:41:36,686 - INFO - Epoch [95/120], Iter [156/312] Loss1: 0.2037 Loss2: 0.2857 Total Loss: 0.4893
+2022-12-18 23:42:09,565 - INFO - Epoch [95/120], Iter [312/312] Loss1: 0.1633 Loss2: 0.2983 Total Loss: 0.4616
+2022-12-18 23:42:09,708 - INFO - Epoch [96/120], alpha for ImgNet: 9.7980, alpha for TxtNet: 9.7980
+2022-12-18 23:42:43,746 - INFO - Epoch [96/120], Iter [156/312] Loss1: 0.2021 Loss2: 0.2925 Total Loss: 0.4946
+2022-12-18 23:43:16,835 - INFO - Epoch [96/120], Iter [312/312] Loss1: 0.1976 Loss2: 0.3143 Total Loss: 0.5119
+2022-12-18 23:43:16,985 - INFO - Epoch [97/120], alpha for ImgNet: 9.8489, alpha for TxtNet: 9.8489
+2022-12-18 23:43:50,867 - INFO - Epoch [97/120], Iter [156/312] Loss1: 0.1972 Loss2: 0.3089 Total Loss: 0.5060
+2022-12-18 23:44:24,224 - INFO - Epoch [97/120], Iter [312/312] Loss1: 0.1532 Loss2: 0.3211 Total Loss: 0.4742
+2022-12-18 23:44:24,371 - INFO - Epoch [98/120], alpha for ImgNet: 9.8995, alpha for TxtNet: 9.8995
+2022-12-18 23:44:58,395 - INFO - Epoch [98/120], Iter [156/312] Loss1: 0.2214 Loss2: 0.3337 Total Loss: 0.5551
+2022-12-18 23:45:31,173 - INFO - Epoch [98/120], Iter [312/312] Loss1: 0.1904 Loss2: 0.2865 Total Loss: 0.4770
+2022-12-18 23:45:31,313 - INFO - Epoch [99/120], alpha for ImgNet: 9.9499, alpha for TxtNet: 9.9499
+2022-12-18 23:46:05,122 - INFO - Epoch [99/120], Iter [156/312] Loss1: 0.2013 Loss2: 0.3131 Total Loss: 0.5144
+2022-12-18 23:46:38,611 - INFO - Epoch [99/120], Iter [312/312] Loss1: 0.1657 Loss2: 0.3123 Total Loss: 0.4779
+2022-12-18 23:46:38,762 - INFO - Epoch [100/120], alpha for ImgNet: 10.0000, alpha for TxtNet: 10.0000
+2022-12-18 23:47:12,844 - INFO - Epoch [100/120], Iter [156/312] Loss1: 0.2202 Loss2: 0.2957 Total Loss: 0.5159
+2022-12-18 23:47:46,379 - INFO - Epoch [100/120], Iter [312/312] Loss1: 0.1738 Loss2: 0.3190 Total Loss: 0.4928
+2022-12-18 23:47:46,484 - INFO - Epoch [101/120], alpha for ImgNet: 10.0499, alpha for TxtNet: 10.0499
+2022-12-18 23:48:20,157 - INFO - Epoch [101/120], Iter [156/312] Loss1: 0.2394 Loss2: 0.3010 Total Loss: 0.5403
+2022-12-18 23:48:53,010 - INFO - Epoch [101/120], Iter [312/312] Loss1: 0.1631 Loss2: 0.3084 Total Loss: 0.4715
+2022-12-18 23:48:53,147 - INFO - Epoch [102/120], alpha for ImgNet: 10.0995, alpha for TxtNet: 10.0995
+2022-12-18 23:49:27,122 - INFO - Epoch [102/120], Iter [156/312] Loss1: 0.1681 Loss2: 0.2752 Total Loss: 0.4433
+2022-12-18 23:50:00,166 - INFO - Epoch [102/120], Iter [312/312] Loss1: 0.2016 Loss2: 0.2995 Total Loss: 0.5010
+2022-12-18 23:50:00,298 - INFO - Epoch [103/120], alpha for ImgNet: 10.1489, alpha for TxtNet: 10.1489
+2022-12-18 23:50:34,189 - INFO - Epoch [103/120], Iter [156/312] Loss1: 0.2187 Loss2: 0.2959 Total Loss: 0.5147
+2022-12-18 23:51:07,356 - INFO - Epoch [103/120], Iter [312/312] Loss1: 0.1990 Loss2: 0.2765 Total Loss: 0.4754
+2022-12-18 23:51:07,514 - INFO - Epoch [104/120], alpha for ImgNet: 10.1980, alpha for TxtNet: 10.1980
+2022-12-18 23:51:40,750 - INFO - Epoch [104/120], Iter [156/312] Loss1: 0.2044 Loss2: 0.3124 Total Loss: 0.5168
+2022-12-18 23:52:14,192 - INFO - Epoch [104/120], Iter [312/312] Loss1: 0.1789 Loss2: 0.2944 Total Loss: 0.4733
+2022-12-18 23:52:14,358 - INFO - Epoch [105/120], alpha for ImgNet: 10.2470, alpha for TxtNet: 10.2470
+2022-12-18 23:52:48,684 - INFO - Epoch [105/120], Iter [156/312] Loss1: 0.1778 Loss2: 0.3105 Total Loss: 0.4883
+2022-12-18 23:53:21,845 - INFO - Epoch [105/120], Iter [312/312] Loss1: 0.1445 Loss2: 0.2863 Total Loss: 0.4309
+2022-12-18 23:53:21,991 - INFO - Epoch [106/120], alpha for ImgNet: 10.2956, alpha for TxtNet: 10.2956
+2022-12-18 23:53:56,399 - INFO - Epoch [106/120], Iter [156/312] Loss1: 0.1849 Loss2: 0.3188 Total Loss: 0.5037
+2022-12-18 23:54:29,347 - INFO - Epoch [106/120], Iter [312/312] Loss1: 0.1615 Loss2: 0.2847 Total Loss: 0.4462
+2022-12-18 23:54:29,496 - INFO - Epoch [107/120], alpha for ImgNet: 10.3441, alpha for TxtNet: 10.3441
+2022-12-18 23:55:03,427 - INFO - Epoch [107/120], Iter [156/312] Loss1: 0.1686 Loss2: 0.3303 Total Loss: 0.4989
+2022-12-18 23:55:37,096 - INFO - Epoch [107/120], Iter [312/312] Loss1: 0.1806 Loss2: 0.3070 Total Loss: 0.4876
+2022-12-18 23:55:37,269 - INFO - Epoch [108/120], alpha for ImgNet: 10.3923, alpha for TxtNet: 10.3923
+2022-12-18 23:56:11,340 - INFO - Epoch [108/120], Iter [156/312] Loss1: 0.1723 Loss2: 0.3164 Total Loss: 0.4887
+2022-12-18 23:56:44,838 - INFO - Epoch [108/120], Iter [312/312] Loss1: 0.1983 Loss2: 0.3195 Total Loss: 0.5178
+2022-12-18 23:56:45,002 - INFO - Epoch [109/120], alpha for ImgNet: 10.4403, alpha for TxtNet: 10.4403
+2022-12-18 23:57:18,965 - INFO - Epoch [109/120], Iter [156/312] Loss1: 0.1344 Loss2: 0.3126 Total Loss: 0.4470
+2022-12-18 23:57:52,135 - INFO - Epoch [109/120], Iter [312/312] Loss1: 0.2006 Loss2: 0.2762 Total Loss: 0.4768
+2022-12-18 23:57:52,309 - INFO - Epoch [110/120], alpha for ImgNet: 10.4881, alpha for TxtNet: 10.4881
+2022-12-18 23:58:26,650 - INFO - Epoch [110/120], Iter [156/312] Loss1: 0.1547 Loss2: 0.2539 Total Loss: 0.4086
+2022-12-18 23:58:59,906 - INFO - Epoch [110/120], Iter [312/312] Loss1: 0.1892 Loss2: 0.2712 Total Loss: 0.4603
+2022-12-18 23:59:00,023 - INFO - Epoch [111/120], alpha for ImgNet: 10.5357, alpha for TxtNet: 10.5357
+2022-12-18 23:59:34,154 - INFO - Epoch [111/120], Iter [156/312] Loss1: 0.1827 Loss2: 0.2478 Total Loss: 0.4305
+2022-12-19 00:00:06,847 - INFO - Epoch [111/120], Iter [312/312] Loss1: 0.1543 Loss2: 0.2823 Total Loss: 0.4366
+2022-12-19 00:00:06,982 - INFO - Epoch [112/120], alpha for ImgNet: 10.5830, alpha for TxtNet: 10.5830
+2022-12-19 00:00:40,384 - INFO - Epoch [112/120], Iter [156/312] Loss1: 0.1813 Loss2: 0.2708 Total Loss: 0.4522
+2022-12-19 00:01:13,910 - INFO - Epoch [112/120], Iter [312/312] Loss1: 0.1909 Loss2: 0.2806 Total Loss: 0.4715
+2022-12-19 00:01:14,037 - INFO - Epoch [113/120], alpha for ImgNet: 10.6301, alpha for TxtNet: 10.6301
+2022-12-19 00:01:48,027 - INFO - Epoch [113/120], Iter [156/312] Loss1: 0.1774 Loss2: 0.2428 Total Loss: 0.4202
+2022-12-19 00:02:20,972 - INFO - Epoch [113/120], Iter [312/312] Loss1: 0.1807 Loss2: 0.2628 Total Loss: 0.4434
+2022-12-19 00:02:21,134 - INFO - Epoch [114/120], alpha for ImgNet: 10.6771, alpha for TxtNet: 10.6771
+2022-12-19 00:02:54,983 - INFO - Epoch [114/120], Iter [156/312] Loss1: 0.1720 Loss2: 0.2898 Total Loss: 0.4618
+2022-12-19 00:03:28,486 - INFO - Epoch [114/120], Iter [312/312] Loss1: 0.2161 Loss2: 0.2933 Total Loss: 0.5093
+2022-12-19 00:03:28,649 - INFO - Epoch [115/120], alpha for ImgNet: 10.7238, alpha for TxtNet: 10.7238
+2022-12-19 00:04:02,545 - INFO - Epoch [115/120], Iter [156/312] Loss1: 0.1737 Loss2: 0.3135 Total Loss: 0.4872
+2022-12-19 00:04:36,149 - INFO - Epoch [115/120], Iter [312/312] Loss1: 0.1972 Loss2: 0.2874 Total Loss: 0.4847
+2022-12-19 00:04:36,295 - INFO - Epoch [116/120], alpha for ImgNet: 10.7703, alpha for TxtNet: 10.7703
+2022-12-19 00:05:10,323 - INFO - Epoch [116/120], Iter [156/312] Loss1: 0.2289 Loss2: 0.2948 Total Loss: 0.5237
+2022-12-19 00:05:43,353 - INFO - Epoch [116/120], Iter [312/312] Loss1: 0.1876 Loss2: 0.3281 Total Loss: 0.5157
+2022-12-19 00:05:43,522 - INFO - Epoch [117/120], alpha for ImgNet: 10.8167, alpha for TxtNet: 10.8167
+2022-12-19 00:06:17,940 - INFO - Epoch [117/120], Iter [156/312] Loss1: 0.1683 Loss2: 0.2791 Total Loss: 0.4474
+2022-12-19 00:06:51,006 - INFO - Epoch [117/120], Iter [312/312] Loss1: 0.2198 Loss2: 0.2991 Total Loss: 0.5189
+2022-12-19 00:06:51,144 - INFO - Epoch [118/120], alpha for ImgNet: 10.8628, alpha for TxtNet: 10.8628
+2022-12-19 00:07:25,291 - INFO - Epoch [118/120], Iter [156/312] Loss1: 0.1664 Loss2: 0.3167 Total Loss: 0.4831
+2022-12-19 00:07:58,634 - INFO - Epoch [118/120], Iter [312/312] Loss1: 0.1886 Loss2: 0.3103 Total Loss: 0.4990
+2022-12-19 00:07:58,743 - INFO - Epoch [119/120], alpha for ImgNet: 10.9087, alpha for TxtNet: 10.9087
+2022-12-19 00:08:32,495 - INFO - Epoch [119/120], Iter [156/312] Loss1: 0.1744 Loss2: 0.2941 Total Loss: 0.4685
+2022-12-19 00:09:05,778 - INFO - Epoch [119/120], Iter [312/312] Loss1: 0.2065 Loss2: 0.3063 Total Loss: 0.5128
+2022-12-19 00:09:05,922 - INFO - Epoch [120/120], alpha for ImgNet: 10.9545, alpha for TxtNet: 10.9545
+2022-12-19 00:09:40,195 - INFO - Epoch [120/120], Iter [156/312] Loss1: 0.1700 Loss2: 0.2999 Total Loss: 0.4699
+2022-12-19 00:10:13,269 - INFO - Epoch [120/120], Iter [312/312] Loss1: 0.1564 Loss2: 0.3248 Total Loss: 0.4812
+2022-12-19 00:11:23,204 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-19 00:11:23,205 - INFO - MAP of Image to Text: 0.928, MAP of Text to Image: 0.923
+2022-12-19 00:11:23,205 - INFO - --------------------------------------------------------------------
+2022-12-19 00:11:33,934 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-19 00:11:33,934 - INFO - MAP of Image to Text: 0.810, MAP of Text to Image: 0.842
+2022-12-19 00:11:33,934 - INFO - --------------------------------------------------------------------
+2022-12-19 00:11:37,320 - INFO - **********Save the trained model successfully.**********
+2022-12-19 00:11:37,320 - INFO - #########is best:1.6520 #########
+2022-12-19 00:11:37,367 - INFO - ---------------------------Test------------------------
+2022-12-19 00:11:38,300 - INFO - **************** Load checkpoint ./checkpoint/ASCH_MIRFlickr_32_bit_best_epoch.pth ****************
+2022-12-19 00:11:38,302 - INFO - ********** The loaded model has been trained for 120 epochs.*********
+2022-12-19 00:12:48,367 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-19 00:12:48,368 - INFO - MAP of Image to Text: 0.8103, MAP of Text to Image: 0.8417
+2022-12-19 00:12:48,368 - INFO - --------------------------------------------------------------------
+2022-12-19 00:13:53,542 - INFO - tensor([0.9455, 0.9220, 0.9143, 0.8988, 0.8855, 0.8736, 0.8627, 0.8531, 0.8446,
+        0.8368, 0.8294, 0.8227])
+2022-12-19 00:13:53,545 - INFO - tensor([0.9025, 0.9185, 0.9137, 0.9042, 0.8972, 0.8899, 0.8825, 0.8756, 0.8696,
+        0.8640, 0.8587, 0.8532])
+2022-12-19 00:16:13,886 - INFO - tensor([0.9245, 0.9242, 0.9194, 0.9143, 0.8988, 0.8736, 0.8368, 0.8089, 0.7790,
+        0.7473, 0.7101, 0.6678, 0.6243, 0.5803, 0.5799])
+2022-12-19 00:16:13,889 - INFO - tensor([0.0051, 0.0102, 0.0302, 0.0497, 0.0963, 0.1831, 0.3415, 0.4874, 0.6179,
+        0.7329, 0.8282, 0.9022, 0.9589, 0.9998, 1.0000])
+2022-12-19 00:16:13,890 - INFO - tensor([0.9174, 0.9193, 0.9175, 0.9137, 0.9042, 0.8899, 0.8640, 0.8406, 0.8034,
+        0.7613, 0.7144, 0.6670, 0.6234, 0.5803, 0.5799])
+2022-12-19 00:16:13,891 - INFO - tensor([0.0049, 0.0099, 0.0295, 0.0487, 0.0953, 0.1852, 0.3520, 0.5075, 0.6381,
+        0.7467, 0.8324, 0.9002, 0.9568, 0.9998, 1.0000])
+2022-12-19 00:16:23,513 - INFO - --------------------Evaluation: Calculate top MAP-------------------
+2022-12-19 00:16:23,514 - INFO - MAP of Image to Text: 0.9284, MAP of Text to Image: 0.9225
+2022-12-19 00:16:23,514 - INFO - --------------------------------------------------------------------
