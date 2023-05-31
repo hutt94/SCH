@@ -16,6 +16,10 @@ if settings.DATASET == "MIRFlickr":
     txt_set = scio.loadmat(settings.TXT_DIR)
     txt_set = np.array(txt_set['YAll'], dtype=np.float)
 
+    index_all = np.random.permutation(20015)
+    indexTest = index_all[0:2000]
+    indexDatabase = index_all[2000:12000]
+    indexTrain = index_all[2000:-1]
     first = True
     for label in range(label_set.shape[1]):
         index = np.where(label_set[:, label] == 1)[0]
@@ -134,6 +138,11 @@ if settings.DATASET == "NUSWIDE":
     indexTest = test_index
     indexDatabase = database_index
     indexTrain = train_index
+    # np.random.seed(2023)
+    # index_all = np.random.permutation(186577)
+    # indexTest = index_all[0:2000]
+    # indexDatabase = index_all[2000:186577]
+    # indexTrain = index_all[2000:12000]
 
     nus_train_transform = transforms.Compose([
         transforms.RandomHorizontalFlip(),

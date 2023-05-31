@@ -66,6 +66,7 @@ def calculate_map(qu_B, re_B, qu_L, re_L):
     num_query = qu_L.shape[0]
     map = 0
     top_result = 100
+    results = []
     
     for iter in range(num_query):
         gnd = (np.dot(qu_L[iter, :], re_L.transpose()) > 0).astype(np.float32)
@@ -74,6 +75,7 @@ def calculate_map(qu_B, re_B, qu_L, re_L):
             continue
         hamm = calculate_hamming(qu_B[iter, :], re_B)
         ind = np.argsort(hamm)
+        results.append(ind[:top_result])
         gnd = gnd[ind]
 
         count = np.linspace(1, tsum, tsum)  # [1,2, tsum]
@@ -81,7 +83,7 @@ def calculate_map(qu_B, re_B, qu_L, re_L):
         map_ = np.mean(count / (tindex))
         map = map + map_
     map = map / num_query
-    return map
+    return map, np.array(results)
 
 
 def calculate_top_map(qu_B, re_B, qu_L, re_L, topk):

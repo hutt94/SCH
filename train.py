@@ -5,8 +5,10 @@ from torch.autograd import Variable
 
 import datasets
 import settings
-from utils import compress, calculate_top_map, calculate_map, p_topK
+from utils import compress, calculate_top_map, calculate_map, p_topK, pr_Curve
 from models import ImgNet, TxtNet
+import scipy.io as sio
+import numpy as np
 
 torch.manual_seed(1)
 torch.cuda.manual_seed_all(1)
@@ -46,6 +48,8 @@ class Session:
                                                            num_workers=settings.NUM_WORKERS)
         txt_feat_len = datasets.txt_feat_len
         self.CodeNet_I = ImgNet(code_len=settings.CODE_LEN, txt_feat_len=txt_feat_len)
+        self.FeatNet_I = ImgNet(code_len=settings.CODE_LEN, txt_feat_len=txt_feat_len)
+
         self.CodeNet_T = TxtNet(code_len=settings.CODE_LEN, txt_feat_len=txt_feat_len)
         self.maxfunc = torch.nn.ReLU()
 
@@ -55,6 +59,13 @@ class Session:
         self.opt_T = torch.optim.SGD(self.CodeNet_T.parameters(), lr=settings.LR_TXT, momentum=settings.MOMENTUM,
                                      weight_decay=settings.WEIGHT_DECAY, nesterov=True)
         self.best = 0
+        
+    def set_LR(self):
+        self.opt_I = torch.optim.SGD(self.CodeNet_I.parameters(), lr=settings.LR_IMG * 0.2, momentum=settings.MOMENTUM,
+                                     weight_decay=settings.WEIGHT_DECAY, nesterov=True)
+
+        self.opt_T = torch.optim.SGD(self.CodeNet_T.parameters(), lr=settings.LR_TXT * 0.2, momentum=settings.MOMENTUM,
+                                     weight_decay=settings.WEIGHT_DECAY, nesterov=True)
 
     def train(self, epoch):
 
@@ -79,34 +90,37 @@ class Session:
 
             L = F.normalize(labels).mm(F.normalize(labels).t())
             
-            thresh = (1 - L) * settings.CODE_LEN / 2
-            up_thresh =  thresh + settings.WIDTH + 0.01 * torch.rand(1).cuda()
-            low_thresh =  thresh - 0.01 * torch.rand(1).cuda()
+            k = torch.tensor(settings.CODE_LEN, dtype=torch.float32)
+            thresh = (1 - L) * k / 2
+            width = 3
+            up_thresh =  thresh
+            low_thresh =  thresh - width
+            low_thresh[low_thresh <= 0] = 0
+            low_thresh[L == 0] = settings.CODE_LEN / 2
             
-            large_flag = torch.ones(settings.BATCH_SIZE, settings.BATCH_SIZE).cuda()
-            small_flag = torch.ones(settings.BATCH_SIZE, settings.BATCH_SIZE).cuda()
-            large_flag[L == 1] = 0
-            large_flag[L == 0] = settings.BETA
-            small_flag[L == 0] = 0
-            small_flag[L == 1] = settings.ALPHA
+            low_flag = torch.ones(settings.BATCH_SIZE, settings.BATCH_SIZE).cuda()
+            up_flag = torch.ones(settings.BATCH_SIZE, settings.BATCH_SIZE).cuda()
+            low_flag[L == 1] = 0
+            low_flag[L == 0] = settings.BETA
+            up_flag[L == 0] = 0
+            up_flag[L == 1] = settings.ALPHA
 
             BI_BI = (settings.CODE_LEN - B_I.mm(B_I.t())) / 2
             BT_BT = (settings.CODE_LEN - B_T.mm(B_T.t())) / 2
             BI_BT = (settings.CODE_LEN - B_I.mm(B_T.t())) / 2
             BT_BI = (settings.CODE_LEN - B_T.mm(B_I.t())) / 2
-            
-            # lower bound
-            loss1 = (torch.norm(self.maxfunc(low_thresh - BI_BI) * large_flag) \
-                    + torch.norm(self.maxfunc(low_thresh - BT_BT) * large_flag) \
-                    + torch.norm(self.maxfunc(low_thresh - BT_BI) * large_flag) \
-                    + torch.norm(self.maxfunc(low_thresh - BI_BT) * large_flag)) / (settings.BATCH_SIZE * settings.BATCH_SIZE)
+
+            # # lower bound
+            loss1 = (torch.norm(self.maxfunc(low_thresh - BI_BI) * low_flag) \
+                    + torch.norm(self.maxfunc(low_thresh - BT_BT) * low_flag) \
+                    + torch.norm(self.maxfunc(low_thresh - BT_BI) * low_flag) \
+                    + torch.norm(self.maxfunc(low_thresh - BI_BT) * low_flag)) / (settings.BATCH_SIZE * settings.BATCH_SIZE)
             
             # upper bound
-            loss2 = (torch.norm(self.maxfunc(BI_BI - up_thresh) * small_flag) \
-                    + torch.norm(self.maxfunc(BT_BT - up_thresh) * small_flag) \
-                    + torch.norm(self.maxfunc(BT_BI - up_thresh) * small_flag) \
-                    + torch.norm(self.maxfunc(BI_BT - up_thresh) * small_flag)) / (settings.BATCH_SIZE * settings.BATCH_SIZE)
-
+            loss2 = (torch.norm(self.maxfunc(BI_BI - up_thresh) * up_flag) \
+                    + torch.norm(self.maxfunc(BT_BT - up_thresh) * up_flag) \
+                    + torch.norm(self.maxfunc(BT_BI - up_thresh) * up_flag) \
+                    + torch.norm(self.maxfunc(BI_BT - up_thresh) * up_flag)) / (settings.BATCH_SIZE * settings.BATCH_SIZE)
             
             loss = loss1 + loss2
         
@@ -116,7 +130,7 @@ class Session:
             if (idx + 1) % (len(self.train_dataset) // settings.BATCH_SIZE / settings.EPOCH_INTERVAL) == 0:
                 self.logger.info(
                     'Epoch [%d/%d], Iter [%d/%d] '
-                    'Loss1: %.4f Loss2: %.4f '
+                    'Loss1: %.4f Loss2: %.4f'
                     'Total Loss: %.4f'
                     % (
                         epoch + 1, settings.NUM_EPOCH, idx + 1,
@@ -133,27 +147,55 @@ class Session:
         
         re_BI, re_BT, re_L, qu_BI, qu_BT, qu_L = compress(self.database_loader, self.test_loader, self.CodeNet_I,
                                                               self.CodeNet_T, self.database_dataset, self.test_dataset)
-        K = [1, 200, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
-               
+        K1 = [1, 200, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+            
+        if settings.DATASET == "MIRFlickr":
+            K2 = [50, 100, 300, 500, 1000] + [i for i in range(2000, 20015, 2000)] #+ [20015]
+        if settings.DATASET == "NUSWIDE":
+            K2 = [50, 100, 500, 1000, 2000, 5000] + [i for i in range(5000, 186577, 10000)] #+ [186577]
+            
+       
         if settings.EVAL:
-            MAP_I2T = calculate_map(qu_B=qu_BI, re_B=re_BT, qu_L=qu_L, re_L=re_L)
-            MAP_T2I = calculate_map(qu_B=qu_BT, re_B=re_BI, qu_L=qu_L, re_L=re_L)
+            MAP_I2T1, R_I2T = calculate_map(qu_B=qu_BI, re_B=re_BT, qu_L=qu_L, re_L=re_L)
+            MAP_T2I1, R_T2I = calculate_map(qu_B=qu_BT, re_B=re_BI, qu_L=qu_L, re_L=re_L)
+            file_name = '%s_%d_order.mat' % (settings.DATASET, settings.CODE_LEN)
+            # sio.savemat(file_name, {'Ri2t':R_I2T,
+            #                         'Rt2i':R_T2I,
+            #                         'Lqu': qu_L,
+            #                         'Lre': re_L,
+            #                         'BI': re_BI,
+            #                         'BT': re_BT})
             self.logger.info('--------------------Evaluation: Calculate top MAP-------------------')
-            self.logger.info('MAP of Image to Text: %.4f, MAP of Text to Image: %.4f' % (MAP_I2T, MAP_T2I))
+            self.logger.info('MAP of Image to Text: %.4f, MAP of Text to Image: %.4f' % (MAP_I2T1, MAP_T2I1))
             self.logger.info('--------------------------------------------------------------------')
-            retI2T = p_topK(qu_BI, re_BT, qu_L, re_L, K)
-            retT2I = p_topK(qu_BT, re_BI, qu_L, re_L, K)
+            retI2T = p_topK(qu_BI, re_BT, qu_L, re_L, K1)
+            retT2I = p_topK(qu_BT, re_BI, qu_L, re_L, K1)
             self.logger.info(retI2T)
             self.logger.info(retT2I)
+            pI2T, rI2T = pr_Curve(qu_BI, re_BT, qu_L, re_L, K2)
+            pT2I, rT2I = pr_Curve(qu_BT, re_BI, qu_L, re_L, K2)
+            self.logger.info(pI2T)
+            self.logger.info(rI2T)
+            self.logger.info(pT2I)
+            self.logger.info(rT2I)
             MAP_I2T = calculate_top_map(qu_B=qu_BI, re_B=re_BT, qu_L=qu_L, re_L=re_L, topk=50)
             MAP_T2I = calculate_top_map(qu_B=qu_BT, re_B=re_BI, qu_L=qu_L, re_L=re_L, topk=50)
             self.logger.info('--------------------Evaluation: Calculate top MAP-------------------')
             self.logger.info('MAP of Image to Text: %.4f, MAP of Text to Image: %.4f' % (MAP_I2T, MAP_T2I))
             self.logger.info('--------------------------------------------------------------------')
+            file_name = '%s_%d_result_%d.mat' % (settings.DATASET, settings.CODE_LEN, step)
+            sio.savemat(file_name, {'mapall':[MAP_I2T1, MAP_T2I1],
+                                    # 'map50':[MAP_I2T, MAP_T2I],
+                                    'topki2t': retI2T.numpy(),
+                                    'topkt2i': retT2I.numpy(),
+                                    'prpi2t': pI2T.numpy(),
+                                    'prri2t': rI2T.numpy(),
+                                    'prpt2i': pT2I.numpy(),
+                                    'prrt2i': rT2I.numpy()})
             
         else:
-            MAP_I2T = calculate_top_map(qu_B=qu_BI, re_B=re_BT, qu_L=qu_L, re_L=re_L, topk=50)
-            MAP_T2I = calculate_top_map(qu_B=qu_BT, re_B=re_BI, qu_L=qu_L, re_L=re_L, topk=50)
+            MAP_I2T, _ = calculate_map(qu_B=qu_BI, re_B=re_BT, qu_L=qu_L, re_L=re_L)
+            MAP_T2I, _ = calculate_map(qu_B=qu_BT, re_B=re_BI, qu_L=qu_L, re_L=re_L)
             self.logger.info('--------------------Evaluation: Calculate top MAP-------------------')
             self.logger.info('MAP of Image to Text: %.4f, MAP of Text to Image: %.4f' % (MAP_I2T, MAP_T2I))
             self.logger.info('--------------------------------------------------------------------')
@@ -198,11 +240,11 @@ def main():
         sess.eval()
 
     else:
-        sess.logger.info('---------------------------Training Set Size------------------------')
+        sess.logger.info('---------------------------Size------------------------')
         sess.logger.info('Training size: %d, Test size: %d' % (len(datasets.indexTrain), len(datasets.indexTest)))
         
+        # settings.EVAL = True
         for epoch in range(settings.NUM_EPOCH):
-            # train the Model
             sess.train(epoch)
             # eval the Model
             if (epoch + 1) % settings.EVAL_INTERVAL == 0:
