@@ -1,13 +1,21 @@
 # SCH
 
+## Train model
+
 You can directly run the file 
 ```
 python train.py --Bit 16 --GID 0 --DS 0
 ```
 to get the results.
 
+## Evaluate the model
 
-Models:
+Modify the settings.py line 7
+```
+EVAL = True
+```
+
+You can downlod the trained models via following links:
 
 | Dataset | Hash Bit | Downlod |
 | :-- | :--: | :-- |
