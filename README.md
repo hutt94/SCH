@@ -15,7 +15,7 @@ Modify the settings.py line 7
 EVAL = True
 ```
 
-You can downlod the trained models via following links:
+You can downlod the trained models via following links (have been updated):
 
 | Dataset | Hash Bit | Downlod |
 | :-- | :--: | :--: |
