@@ -16,10 +16,11 @@ if settings.DATASET == "MIRFlickr":
     txt_set = scio.loadmat(settings.TXT_DIR)
     txt_set = np.array(txt_set['YAll'], dtype=np.float)
 
-    index_all = np.random.permutation(20015)
-    indexTest = index_all[0:2000]
-    indexDatabase = index_all[2000:12000]
-    indexTrain = index_all[2000:-1]
+    # index_all = np.random.permutation(20015)
+    # indexTest = index_all[0:2000]
+    # indexDatabase = index_all[2000:12000]
+    # indexTrain = index_all[2000:-1]
+    
     first = True
     for label in range(label_set.shape[1]):
         index = np.where(label_set[:, label] == 1)[0]
