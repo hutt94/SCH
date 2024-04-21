@@ -1,4 +1,8 @@
 # SCH
+Source code for TPAMI paper "Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective"
+
+## Datasets
+Please refer to the provided [link](https://github.com/yxinwang/HSCH-TCSVT) to download the dataset, and update route in Settings.py.
 
 ## Train model
 
