@@ -2,7 +2,7 @@
 Source code for TPAMI paper "Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective"
 
 ## Datasets
-Please refer to the provided [link](https://github.com/yxinwang/HSCH-TCSVT) to download the dataset, and update route in Settings.py.
+Please refer to the provided [link](https://github.com/jiangqy/DCMH-CVPR2017/tree/master/DCMH_tensorflow/DCMH_tensorflow) to download the dataset, create a data folder and update data path in settings.py.
 
 ## Train model
 
