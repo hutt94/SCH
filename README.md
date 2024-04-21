@@ -31,3 +31,17 @@ You can downlod the trained models via following links (have been updated):
 | NUS | 32 | [link](https://lifehkbueduhk-my.sharepoint.com/:u:/g/personal/20481446_life_hkbu_edu_hk/EWp3d2dGaihHquexIes01CUBrVoVGPyAfnR9PEO8RXpOKw?e=bMRpD7) |
 | NUS | 64 | [link](https://lifehkbueduhk-my.sharepoint.com/:u:/g/personal/20481446_life_hkbu_edu_hk/EQEF3zFiFLVJi85KpwrzE48BSNn1wj6spRuvJtS1ujLpwA?e=0BbbMW) |
 | NUS | 128 | [link](https://lifehkbueduhk-my.sharepoint.com/:u:/g/personal/20481446_life_hkbu_edu_hk/Edx0u9xWrrFBnRzqo_aHOUgBlrmxAQ8tiMQTOfA1uJQgqg?e=dkL0gD) |
+
+## Citation
+If you find SCH useful in your research, please consider citing:
+
+```
+@article{hu2024cross,
+  title={Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective},
+  author={Hu, Zhikai and Cheung, Yiu-ming and Li, Mengke and Lan, Weichao and Zhang, Donglin and Liu, Qiang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
+}
+```
+
