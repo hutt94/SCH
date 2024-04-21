@@ -38,7 +38,7 @@ If you find SCH useful in your research, please consider citing:
 ```
 @article{hu2024cross,
   title={Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective},
-  author={Hu, Zhikai and Cheung, Yiu-ming and Li, Mengke and Lan, Weichao and Zhang, Donglin and Liu, Qiang},
+  author={Hu, Zhikai and Cheung, Yiu-ming and Li, Mengke and Lan, Weichao},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2024},
   publisher={IEEE}
