@@ -1,5 +1,5 @@
 # SCH
-Source code for TPAMI paper "Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective"
+Source code for TPAMI paper "[Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective](https://ieeexplore.ieee.org/document/10506992/)"
 
 ## Datasets
 Please refer to the provided [link](https://github.com/jiangqy/DCMH-CVPR2017/tree/master/DCMH_tensorflow/DCMH_tensorflow) to download the dataset, create a data folder and update data path in settings.py.
