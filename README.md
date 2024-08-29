@@ -41,6 +41,10 @@ If you find SCH useful in your research, please consider citing:
   author={Hu, Zhikai and Cheung, Yiu-ming and Li, Mengke and Lan, Weichao},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
   year={2024},
+  volume={},
+  number={},
+  pages={1-15},
+  doi={10.1109/TPAMI.2024.3392763},
   publisher={IEEE}
 }
 ```
