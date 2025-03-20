@@ -1,6 +1,11 @@
 # SCH
 Source code for TPAMI'24 paper "[Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective](https://ieeexplore.ieee.org/document/10506992/)"
 
+Related Works on CMH:
+- [[TCSVT'23] Joint Semantic Preserving Sparse Hashing for Cross-Modal Retrieval](https://github.com/hutt94/JSPSH)
+- [[ICASSP'24] Key Points Centered Sparse Hashing for Cross-Modal Retrieval](https://github.com/hutt94/KPCSH)
+- [[ICMR'19] Triplet Fusion Network Hashing for Unpaired Cross-Modal Retrieval](https://github.com/hutt94/TFNH)
+  
 ## Datasets
 Please refer to the provided [link](https://github.com/jiangqy/DCMH-CVPR2017/tree/master/DCMH_tensorflow/DCMH_tensorflow) to download the dataset, create a data folder and update data path in settings.py.
 
