@@ -1,7 +1,7 @@
 # SCH
 Source code for TPAMI'24 paper "[Cross-Modal Hashing Method with Properties of Hamming Space: A New Perspective](https://ieeexplore.ieee.org/document/10506992/)"
 
-Related Works on CMH:
+Related Works on CMH (Paper & Code):
 - [[TCSVT'23] Joint Semantic Preserving Sparse Hashing for Cross-Modal Retrieval](https://github.com/hutt94/JSPSH)
 - [[ICASSP'24] Key Points Centered Sparse Hashing for Cross-Modal Retrieval](https://github.com/hutt94/KPCSH)
 - [[ICMR'19] Triplet Fusion Network Hashing for Unpaired Cross-Modal Retrieval](https://github.com/hutt94/TFNH)
